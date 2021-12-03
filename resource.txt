@@ -1,0 +1,7 @@
+ใช้ PCSC จาก
+
+เป็นหลัก / Main
+http://infintuary.org/stpcsc.php
+
+พบที่อื่น Other (ไม่ได้เปรียบเทียบว่า เหมือนหรือแตกต่างกันอย่างไร)
+https://github.com/johnidm/PCSCSmartCardComponent

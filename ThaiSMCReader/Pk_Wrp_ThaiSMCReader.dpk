@@ -1,0 +1,46 @@
+package Pk_Wrp_ThaiSMCReader;
+{$R *.res}
+{$R 'Wrp_ThaiSMCReader.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Warapetch ThaiSmartCard'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  MD_Events in 'MD_Events.pas',
+  MD_PCSC in 'MD_PCSC.pas',
+  MD_PCSCDef in 'MD_PCSCDef.pas',
+  MD_PCSCRaw in 'MD_PCSCRaw.pas',
+  MD_Tools in 'MD_Tools.pas',
+  UThaiSMCReaderComponent in 'UThaiSMCReaderComponent.pas',
+  UWrpSMCReaderDATA in 'UWrpSMCReaderDATA.pas',
+  UThaiSMCReaderV2 in 'UThaiSMCReaderV2.pas';
+
+end.
