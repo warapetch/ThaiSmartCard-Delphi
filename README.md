@@ -8,7 +8,7 @@ Thai Smart Card Reader Delphi Component
 📌 เครดิต APDU ของคุณ chakphanu\
 https://github.com/chakphanu/ThaiNationalIDCard/blob/master/APDU.md
 
-📌 APDU ผมนำอัพเดต\
+📌 APDU ผมนำมาอัพเดต\
 https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 
 🔷 หมายเหตุ
