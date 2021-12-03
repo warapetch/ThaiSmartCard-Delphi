@@ -131,10 +131,6 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
         object TabSheet2: TTabSheet
           Caption = 'Text'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object mmDataAuto: TMemo
             Left = 0
             Top = 0
@@ -171,10 +167,6 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     end
     object TabReadMan_Value: TTabSheet
       Caption = 'Read Text'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object vleAPDU1: TValueListEditor
         Left = 10
         Top = 10
@@ -219,10 +211,6 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     object TabReadMan_Photo: TTabSheet
       Caption = 'Read Photo'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object bvImage: TBevel
         Left = 374
         Top = 41
@@ -285,10 +273,6 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     object TabReadMan_PlayGround: TTabSheet
       Caption = 'PlayGround'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object mmData1: TMemo
         Left = 0
         Top = 41
@@ -346,10 +330,6 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     object TabAbout: TTabSheet
       Caption = 'About'
       ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object imgWarapetch: TImage
         Left = 313
         Top = 0
@@ -9258,7 +9238,7 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     Width = 626
     Height = 62
     Align = alTop
-    Color = 8514558
+    Color = 13986304
     ParentBackground = False
     TabOrder = 1
     object lblCapHeader: TLabel
@@ -9268,7 +9248,7 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
       Height = 23
       Caption = 'Thai Smart Card :: Explorer (for Developer)'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = 8404992
+      Font.Color = clAqua
       Font.Height = -19
       Font.Name = 'Tahoma'
       Font.Style = []
@@ -9280,10 +9260,9 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
       Width = 213
       Height = 16
       Alignment = taRightJustify
-      Caption = #3623#3619#3648#3614#3594#3619'  '#3648#3619#3639#3629#3591#3614#3619#3623#3636#3626#3640#3607#3608#3636#3660' (6412-03 13.00)'
-      Enabled = False
+      Caption = #3623#3619#3648#3614#3594#3619'  '#3648#3619#3639#3629#3591#3614#3619#3623#3636#3626#3640#3607#3608#3636#3660' (6412-03 19.00)'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clYellow
       Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
@@ -9296,7 +9275,7 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
       Height = 19
       Caption = #3626#3635#3619#3623#3592#3610#3633#3605#3619#3611#3619#3632#3594#3634#3594#3609' ('#3626#3635#3627#3619#3633#3610#3609#3633#3585#3614#3633#3602#3609#3634#3650#3611#3619#3649#3585#3619#3617')'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = 185
+      Font.Color = clWhite
       Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
@@ -9364,15 +9343,41 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     Height = 159
     Align = alBottom
     TabOrder = 3
-    object mmStatus: TMemo
+    object PageControl1: TPageControl
       Left = 1
       Top = 1
       Width = 624
       Height = 157
+      ActivePage = TabSheet3
       Align = alClient
-      ReadOnly = True
-      ScrollBars = ssVertical
       TabOrder = 0
+      object TabSheet3: TTabSheet
+        Caption = 'Status'
+        object mmStatus: TMemo
+          Left = 0
+          Top = 0
+          Width = 616
+          Height = 126
+          Align = alClient
+          ReadOnly = True
+          ScrollBars = ssVertical
+          TabOrder = 0
+        end
+      end
+      object TabSheet4: TTabSheet
+        Caption = 'Raw Data'
+        ImageIndex = 1
+        object mmRawData: TMemo
+          Left = 0
+          Top = 0
+          Width = 616
+          Height = 126
+          Align = alClient
+          ReadOnly = True
+          ScrollBars = ssVertical
+          TabOrder = 0
+        end
+      end
     end
   end
   object ThaiSMCReaderV21: TThaiSMCReaderV2
@@ -9384,10 +9389,10 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
       'full_name_th=80 B0 00 11 02 00 64'
       'full_name_en=80 B0 00 75 02 00 64'
       'birth_date=80 B0 00 D9 02 00 08'
-      'genter=80 B0 00 E1 02 00 01'
+      'gender=80 B0 00 E1 02 00 01'
       'office_name=80 B0 00 F6 02 00 64'
-      'start_date=80 B0 01 67 02 00 08'
-      'expire_date=80 B0 01 6F 02 00 08'
+      'card_start_date=80 B0 01 67 02 00 08'
+      'card_expire_date=80 B0 01 6F 02 00 08'
       'religion=80 B0 01 77 02 00 02'
       'address=80 B0 15 79 02 00 A0'
       'under_photo=80 B0 16 19 02 00 0E')
@@ -9425,7 +9430,7 @@ object FrmThaiSMCPlayGround: TFrmThaiSMCPlayGround
     OnGetValueFinish = ThaiSMCReaderV21GetValueFinish
     OnGetValueError = ThaiSMCReaderV21GetValueError
     OnStatusChange = ThaiSMCReaderV21StatusChange
-    Left = 388
-    Top = 284
+    Left = 500
+    Top = 268
   end
 end

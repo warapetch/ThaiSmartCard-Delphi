@@ -48,15 +48,19 @@ type
     lblATR: TLabel;
     pnlCardStatus: TPanel;
     Panel1: TPanel;
-    mmStatus: TMemo;
     PCReadAuto: TPageControl;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     mmDataAuto: TMemo;
     vleDataAuto: TValueListEditor;
-    ThaiSMCReaderV21: TThaiSMCReaderV2;
     cbxAutoReadCard: TCheckBox;
     cbxEncodingThai874: TCheckBox;
+    PageControl1: TPageControl;
+    TabSheet3: TTabSheet;
+    TabSheet4: TTabSheet;
+    mmStatus: TMemo;
+    mmRawData: TMemo;
+    ThaiSMCReaderV21: TThaiSMCReaderV2;
     procedure FormShow(Sender: TObject);
     procedure btnGetPhotoClick(Sender: TObject);
     procedure btnReadCardClick(Sender: TObject);
@@ -69,7 +73,6 @@ type
     procedure ThaiSMCReaderV21GetValueFinish(Sender: TObject; Success: Boolean; Values: TStringList);
     procedure ThaiSMCReaderV21StatusChange(Sender: TObject; Status: string);
     procedure ThaiSMCReaderV21GetPhotoProgress(Sender: TObject; PartTotal, PartComplete: Integer);
-    procedure ThaiSMCReaderV21CardResultValue(Sender: TObject; KeyValue: string; var Title, ResultValue: string);
     procedure ThaiSMCReaderV21DriverUpdate(Sender: TObject; Drivers: TStringList);
     procedure ThaiSMCReaderV21CardStateChange(Sender: TObject; CardState: TWrpCardState; CardStateDesc,
       ReaderName: string);
@@ -81,6 +84,8 @@ type
     procedure ThaiSMCReaderV21CardInsert(Sender: TObject; ReaderName: string);
     procedure ThaiSMCReaderV21CardRemove(Sender: TObject; ReaderName: string);
     procedure ThaiSMCReaderV21GetValueError(Sender: TObject);
+    procedure ThaiSMCReaderV21CardResultValue(Sender: TObject; KeyValue, AsStringTIS620, AsStringThai874: string;
+      AsArrayTIS620, AsArrayThai874: TArrayOfString; var Title, ResultValue: string);
   private
     { Private declarations }
   public
@@ -130,6 +135,7 @@ procedure TFrmThaiSMCPlayGround.ThaiSMCReaderV21BeforeGetValue(Sender: TObject);
 begin
     mmDataAuto.Clear;
     mmDatas.Clear;
+    mmRawData.Clear;
     vleDataAuto.Strings.Clear;
     imgPersonAuto.Picture := NIL;
     imgPersonMan.Picture  := NIL;
@@ -152,9 +158,22 @@ begin
 end;
 
 procedure TFrmThaiSMCPlayGround.ThaiSMCReaderV21CardResultValue(Sender: TObject;
-    KeyValue: string;
-    var Title,ResultValue: string);
+    KeyValue,
+    AsStringTIS620,
+    AsStringThai874: string;
+    AsArrayTIS620,
+    AsArrayThai874: TArrayOfString;
+    var Title, ResultValue: string);
 begin
+    // Note ::
+    // AsStringTIS620   is String TIS-620
+    // AsStringThai874  is String Thai874 - Unicode
+    // AsArrayTIS620    is Array of String (TIS-620) *Dynamic*
+    // AsArrayThai874   is Array of String (Thai874) *Dynamic*
+    // -----------------------------------------------------
+
+    mmRawData.Lines.Add(AsStringTIS620);
+
     // Convert YMD to DMY
     if (KeyValue = 'birth_date') or
        (KeyValue = 'start_date') or
@@ -208,8 +227,7 @@ begin
         Title := 'ที่อยู่'
     else
     if (KeyValue = 'under_photo') then
-        Title := 'เลขหลังบัตร';
-
+        Title := 'เลขใต้รูป';
 end;
 
 procedure TFrmThaiSMCPlayGround.ThaiSMCReaderV21CardStateChange(Sender: TObject;
@@ -316,15 +334,16 @@ begin
 end;
 
 procedure TFrmThaiSMCPlayGround.btnTestClick(Sender: TObject);
-var rawData : String;
+var sResult,sRawData : String;
     sCaption ,sADPU : String;
+    rawValue : String;
 begin
     mmData1.Clear;
-    rawData  := cbbAPDU.text;
-    sCaption := Copy(rawData,1,POS('=',rawData)-1);
-    sADPU    := Trim(Copy(rawData,POS('=',rawData)+1,255));
-    rawData  := ThaiSMCReaderV21.ManualGetValueByAPDU(sCaption,sADPU);
-    mmData1.Lines.Add(rawData);
+    sRawData  := cbbAPDU.text;
+    sCaption := Copy(sRawData,1,POS('=',sRawData)-1);
+    sADPU    := Trim(Copy(sRawData,POS('=',sRawData)+1,255));
+    sResult  := ThaiSMCReaderV21.ManualGetValueByAPDU(sCaption,sADPU,rawValue);
+    mmData1.Lines.Add(sResult);
 end;
 
 procedure TFrmThaiSMCPlayGround.cbxAutoReadCardClick(Sender: TObject);
