@@ -5,10 +5,10 @@ Thai Smart Card Reader Delphi Component
 ใช้อ่านข้อมูลจากบัตรประชาชน คนไทย
 
 
-APDU ของคุณ chakphanu ทำไว้
+📌 เครดิต APDU ของคุณ chakphanu
 https://github.com/chakphanu/ThaiNationalIDCard/blob/master/APDU.md
 
-APDU ผมอัพเดต
+📌 APDU ผมนำอัพเดต
 https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 
 ## เนื้อหา + คลิป บน ยูทูป
