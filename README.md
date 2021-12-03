@@ -5,11 +5,25 @@ Thai Smart Card Reader Delphi Component
 ใช้อ่านข้อมูลจากบัตรประชาชน คนไทย
 
 
-📌 เครดิต APDU ของคุณ chakphanu
+📌 เครดิต APDU ของคุณ chakphanu\
 https://github.com/chakphanu/ThaiNationalIDCard/blob/master/APDU.md
 
-📌 APDU ผมนำอัพเดต
+📌 APDU ผมนำอัพเดต\
 https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
+
+🔷 หมายเหตุ\
+* บัตรผู้สูงอายุ ไม่ทราบวันเดือนเกิด วันเกิด จะมีเฉพาะปี หรือ เป็นช่องว่าง
+* บัตรผู้สูงอายุ ที่อายุมากกว่า 75 ปี วันหมดอายุ อาจเป็นช่องว่าง
+* ข้อมูลอื่นๆ 
+** รหัสหน่วยงาน
+** ลายเซนต์
+** ลายนิ้วมือ
+** และอื่นๆ 
+🔷 โปรแกรม ThaiSmartCard Explorer\
+สามารถมองเห็นได้เฉพาะส่วนที่เป็น Public
+(เท่าที่เห็นบนหน้าบัตรประชาชน)
+
+
 
 ## เนื้อหา + คลิป บน ยูทูป
 🔷 วิดีโอ
