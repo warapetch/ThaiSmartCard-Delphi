@@ -1,0 +1,46 @@
+package Pk_Wrp_Hardware_XE10_3;
+{$R *.res}
+{$R 'wrp.hw.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Warapetch HW SmartCard'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  UThaiSMCReaderComponent in 'UThaiSMCReaderComponent.pas',
+  MD_Events in 'MD_Events.pas',
+  MD_PCSC in 'MD_PCSC.pas',
+  MD_PCSCDef in 'MD_PCSCDef.pas',
+  MD_PCSCRaw in 'MD_PCSCRaw.pas',
+  MD_Tools in 'MD_Tools.pas',
+  UWrpSMCReaderDATA in 'UWrpSMCReaderDATA.pas',
+  UThaiSMCReaderV2 in 'UThaiSMCReaderV2.pas';
+
+end.
