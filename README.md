@@ -12,9 +12,8 @@ https://github.com/chakphanu/ThaiNationalIDCard/blob/master/APDU.md
 ```
 
 📌 APDU ผมนำมาอัพเดต\
-```xml
 https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
-```
+
 
 🔷 หมายเหตุ / ปัญหา
 ```xml
