@@ -24,8 +24,9 @@ https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 * บัตรผู้สูงอายุ ที่อายุมากกว่า 75 ปี วันหมดอายุ อาจเป็นช่องว่าง
 
 
-🔷 โปรแกรม <mark>ThaiSmartCard Explorer</mark>
-สามารถมองเห็นได้เฉพาะส่วนที่เป็น Public (<mark>เท่าที่เห็นบนหน้าบัตรประชาชน </mark>)
+🔷 **`โปรแกรม ThaiSmartCard Explorer`**
+สามารถมองเห็นได้เฉพาะส่วนที่เป็น Public  \
+(<mark>เท่าที่เห็นบนหน้าบัตรประชาชน </mark>)
 
 |  ฟิลด์  		 | APDU                 |
 |--------------|---------------------|
