@@ -1,0 +1,16 @@
+﻿Component Thai-SmartCard-Reader
+By
+Warapetch rpvs
+
+Last build 7/12/2564 10.00
+
+ขั้นตอนการติดตั้ง
+----------------------------------------------------
+เลือกเมนู  Component >> Install package 
+กดปุ่ม Add 
+เลือกไฟล์ Wrp_ThaiSMCReader.bpl
+* ไฟล์ BPL ถูกคอมไพล์จาก Delphi D10.3 , 10.4 , 11.0
+
+หรือ 
+open Wrp_ThaiSMCReader.dpk
+เลือกเมนู Install จาก Project Group
