@@ -1,3 +1,4 @@
+
 # ThaiSmartCard-Delphi
 Thai Smart Card Reader Delphi Component
 
@@ -5,22 +6,30 @@ Thai Smart Card Reader Delphi Component
 ใช้อ่านข้อมูลจากบัตรประชาชน คนไทย
 
 
-📌 เครดิต APDU ของคุณ chakphanu\
+📌 เครดิต APDU ของคุณ chakphanu
+```xml
 https://github.com/chakphanu/ThaiNationalIDCard/blob/master/APDU.md
+```
 
-📌 APDU ผมนำมาอัพเดต\
+📌 APDU ผมนำมาอัพเดต
+
 https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 
-🔷 หมายเหตุ / ปัญหา (03/12/2564 21.00 น *Event OnCardResultValue* แก้ไขปัญหาได้แล้ว)
+
+🔷 หมายเหตุ / ปัญหา
+```xml
+ 03/12/2564 21.00 น *Event OnCardResultValue* แก้ไขปัญหาได้แล้ว
+ ```
 * บัตรผู้สูงอายุ ไม่ทราบวันเดือนเกิด วันเกิด จะมีเฉพาะปี หรือ เป็นช่องว่าง
 * บัตรผู้สูงอายุ ที่อายุมากกว่า 75 ปี วันหมดอายุ อาจเป็นช่องว่าง
 
 
-🔷 โปรแกรม ThaiSmartCard Explorer\
-สามารถมองเห็นได้เฉพาะส่วนที่เป็น Public (เท่าที่เห็นบนหน้าบัตรประชาชน)
+🔷 **`โปรแกรม ThaiSmartCard Explorer`**  \
+สามารถมองเห็นได้เฉพาะส่วนที่เป็น Public  \
+(<mark>เท่าที่เห็นบนหน้าบัตรประชาชน </mark>)
 
 |  ฟิลด์  		 | APDU                 |
-|-----------------------------------|
+|--------------|---------------------|
 | เลขบัตร		 | 80 B0 00 04 02 00 0D |
 | ชื่อนามสกุล (TH)| 80 B0 00 11 02 00 64 |
 | ชื่อนามสกุล (EN)| 80 B0 00 75 02 00 64 |
@@ -32,19 +41,20 @@ https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 | ศาสนา		| 80 B0 01 77 02 00 02 |
 | ที่อยู่		| 80 B0 15 79 02 00 A0 |
 | เลขใต้บัตร		| 80 B0 16 19 02 00 0E |
-|-----------------------------------|  \
+|
 
-* ข้อมูลอื่นๆ   \
--- รหัสหน่วยงาน [เห็น]  \
--- ลายเซนต์ผู้อนุมัติ [เห็น]  \
--- ลายนิ้วมือ [ไม่เห็น]  \
--- และอื่นๆ [ลองค้นหาดู]  \
+* ข้อมูลอื่นๆ
+> รหัสหน่วยงาน [<mark>เห็น</mark>] \
+> ลายเซนต์ผู้อนุมัติ [<mark>เห็น</mark>] \
+> ลายนิ้วมือ [<mark>ไม่เห็น</mark>]  \
+> และอื่นๆ [<mark>ลองค้นหาดู</mark>]
 
 
 
 ## เนื้อหา + คลิป บน ยูทูป
 🔷 วิดีโอ
 แนะนำ คอมโพเนนท์ Version 1 (ตั้งแต่ 2014) \
+
 https://www.youtube.com/watch?v=bAw9Y4Dm3DI&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=15&ab_channel=HowToCode
 
 ![1](https://img.youtube.com/vi/bAw9Y4Dm3DI/0.jpg)
