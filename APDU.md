@@ -17,8 +17,15 @@ Lc = 0x08 ( len of DF Name )
 
 Thailand Personal DF Name
 0xA0, 0X00, 0x00, 0x00, 0x54, 0x48, 0x00, 0x01
-  
- 
+
+Cla = Class
+Ins = Instruction
+P1 = Parameter #1
+P2 = Parameter #2
+P3/Lc = Parameter #3
+Data = Data in Buffer
+Le = Length of Data
+
 
 |  Description  	| CLA  	| INS  	| P1   	| P2   	| Lc   	| Data 	| Le   	|
 |---------------	|------	|------	|------	|------	|------	|------	|------	|
