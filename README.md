@@ -59,21 +59,18 @@ https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 
 ## เนื้อหา + คลิป บน ยูทูป
 🔷 วิดีโอ
-แนะนำ คอมโพเนนท์ Version 1 (ตั้งแต่ 2014) \
+📌 แนะนำ คอมโพเนนท์ Version 1 (ตั้งแต่ 2014) \
 
-![cover](http://img.youtube.com/vi/bAw9Y4Dm3DI/0.jpg)](http://www.youtube.com/watch?v=bAw9Y4Dm3DI "Click to Play Video")
-
-
-แนะนำ โปรแกรมสำนวจข้อมูล บัตรประชาชน คนไทย  \
-https://www.youtube.com/watch?v=Ke3uz3RVoLA&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=16&ab_channel=HowToCode
-
-![2](https://img.youtube.com/vi/Ke3uz3RVoLA/0.jpg)
+[![cover](http://img.youtube.com/vi/bAw9Y4Dm3DI/0.jpg)](http://www.youtube.com/watch?v=bAw9Y4Dm3DI "Click to Play Video")
 
 
-แนะนำ คอมโพเนนท์ Version 2 (ตั้งแต่ 12/2021)  \
-https://www.youtube.com/watch?v=luhromZFgjM&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=17&ab_channel=HowToCode
+📌 แนะนำ โปรแกรมสำนวจข้อมูล บัตรประชาชน คนไทย  \
 
-![3](https://img.youtube.com/vi/luhromZFgjM/0.jpg)
+[![cover](http://img.youtube.com/vi/Ke3uz3RVoLA/0.jpg)](https://www.youtube.com/watch?v=Ke3uz3RVoLA&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=16&ab_channel=HowToCode "Click to Play Video")
+
+
+📌แนะนำ คอมโพเนนท์ Version 2 (ตั้งแต่ 12/2021)  \
+[![cover](http://img.youtube.com/vi/luhromZFgjM/0.jpg)](https://www.youtube.com/watch?v=luhromZFgjM&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=16&ab_channel=HowToCode "Click to Play Video")
 
 
 🔷 FaceBook  \
