@@ -59,18 +59,9 @@ https://github.com/warapetch/ThaiSmartCard-Delphi/blob/main1/APDU.md
 
 ## เนื้อหา + คลิป บน ยูทูป
 🔷 วิดีโอ
-📌 แนะนำ คอมโพเนนท์ Version 1 (ตั้งแต่ 2014) <br>
+📌 โปรแกรมอ่านบัตรประชาชน คนไทย - ไพธอน <br>
 
-[![cover](http://img.youtube.com/vi/bAw9Y4Dm3DI/0.jpg)](http://www.youtube.com/watch?v=bAw9Y4Dm3DI "Click to Play Video")
-
-
-📌 แนะนำ โปรแกรมสำนวจข้อมูล บัตรประชาชน คนไทย <br>
-📌 แนะนำ คอมโพเนนท์ Version 1 (ตั้งแต่ 12/2021 :: 12/2564) <br>
-[![cover](http://img.youtube.com/vi/Ke3uz3RVoLA/0.jpg)](https://www.youtube.com/watch?v=Ke3uz3RVoLA&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=16&ab_channel=HowToCode "Click to Play Video")
-
-
-📌 แนะนำ คอมโพเนนท์ Version 2 (ตั้งแต่ 12/2021 :: 12/2564) <br>
-[![cover](http://img.youtube.com/vi/luhromZFgjM/0.jpg)](https://www.youtube.com/watch?v=luhromZFgjM&list=PLyo_YyuVQpeVwiveCCYL6ys6-82eAsEPu&index=16&ab_channel=HowToCode "Click to Play Video")
+[![cover](http://img.youtube.com/vi/zmTl_pVMHV0/0.jpg)](https://www.youtube.com/watch?v=zmTl_pVMHV0 "Click to Play Video")
 
 
 🔷 FaceBook  \
